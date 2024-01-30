@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            font-size: large;
+            font-weight: bold;
+            background-image: url(n.jpg);
+            height: auto;
+            width: auto;
+            
+        }
+
+        nav ul {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            background: var(--primary-color);
+        }
+
+        .header {
+            align-items: center;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            font-size: large;
+        }
+
+        nav {
+            display: flex;
+            width: 84%;
+            margin: auto;
+            padding: 20px 0;
+            align-items: center;
+            justify-content: space-between;
+            color:rgb(255, 255, 255)
+        }
+
+        .logo {
+            height: 155px; /* Adjust the height */
+            cursor: pointer;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-weight: bold;
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+
+        nav ul li a:hover {
+            color: rgb(0, 0, 0);
+        }
+        .div.header{
+          box-shadow:0 0 1 rgb(0, 0, 0);
+        }
+
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.097);
+            backdrop-filter: blur(2px);
+            padding: 20px;
+            margin: auto;
+            margin-top: 60px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+            justify-content: center;
+            align-items: flex-start; /* Align to left */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: rgba(255, 255, 255, 0.097);
+            backdrop-filter: blur(2px);
+            border-radius: 0.1px;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 25px;
+            border: 2px solid rgba(255, 255, 255, 0.097);
+            padding: 20px;
+            width: 300px;
+            height: 15px;
+        }
+
+        button[type="submit"] {
+            background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97  51%, #DD5E89  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          button[type="submit"]:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+
+        @media screen and (max-width: 600px) {
+            .form-container {
+                width: 90%;
+            }
+        }
+        footer {
+          background-color: rgba(0, 0, 0, 0.234);
+          backdrop-filter: blur(10px);
+          color: rgb(198,51,115);
+          text-align: center;
+          padding: 1em 0;
+          bottom: 0;
+          width: 100%
+        }
+    </style>
+</head>
+<body>
+  
+  <div class="hero">
+    <nav>s
+      <img src="logo.png" class="logo">
+      <ul>
+        <li><a href="Registration form.html">Home</a></li>
+        <li><a href="#">Sign-in</a></li>
+        <li><a href="Registration form.html">Registration</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </nav>
+    <div class="header">
+      <header>
+        Registration Form
+      </header>
+    </div>
+    
+    <div class="form-container"> 
+        <label for="username">Username:</label> 
+        <input type="text" id="username" name="username" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <form action="Registration form.html"> 
+          <button class = "gfg" type="submit"> 
+            Register
+          </button> 
+      </form> 
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Devendra. All rights reserved.</p>
+  </footer>
+</body>
+</html>
